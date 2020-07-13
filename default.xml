@@ -13,6 +13,11 @@
            review="android-review.googlesource.com"
            revision="refs/tags/android-9.0.0_r46" />
 
+ <remote name="github-lenovo"
+           fetch="https://github.com"
+           revision="master" />
+
+
   <default revision="refs/heads/lineage-16.0"
            remote="github"
            sync-c="true"
@@ -636,6 +641,14 @@
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" groups="pdk" remote="aosp" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" remote="aosp" />
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" remote="aosp" />
+
+ <!-- Lenovo TBX704 Projects -->
+   <project name="lenovo-devs/android_device_lenovo_TBX704" remote="github-lenovo" path="device/lenovo/TBX704" revision="lineage-16.0"/>
+   <project name="lenovo-devs/android_device_lenovo_tb-common" remote="github-lenovo" path="device/lenovo/tb-common" revision="lineage-16.0"/>
+   <project name="lenovo-devs/android_kernel_lenovo_msm8953" remote="github-lenovo" path="kernel/lenovo/msm8953" revision="lineage-16.0"/>
+   <project name="lenovo-devs/proprietary_vendor_lenovo" remote="github-lenovo" path="vendor/lenovo" revision="lineage-16.0"/>
+ <!-- Lenovo TBX704 Projects -->
+
 
   <include name="snippets/lineage.xml" />
 
